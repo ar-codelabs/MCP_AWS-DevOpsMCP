@@ -61,7 +61,7 @@ aws configure
   "mcpServers": {
     "aws-core": {
       "command": "uvx",
-      "args": ["awslabs.core-mcp-server@latest"],
+      "args": ["awslabs-core-mcp-server@latest"],
       "env": {
         "AWS_PROFILE": "default",
         "AWS_REGION": "us-east-1",
@@ -95,7 +95,7 @@ aws configure
     },
     "aws-iac": {
       "command": "uvx",
-      "args": ["awslabs.iac-mcp-server@latest"],
+      "args": ["awslabs.aws-iac-mcp-server@latest"],
       "env": {
         "AWS_PROFILE": "default",
         "AWS_REGION": "us-east-1",
@@ -149,7 +149,7 @@ aws configure
     },
     "aws-serverless": {
       "command": "uvx",
-      "args": ["awslabs.serverless-mcp-server@latest"],
+      "args": ["awslabs.aws-serverless-mcp-server@latest"],
       "env": {
         "AWS_PROFILE": "default",
         "AWS_REGION": "us-east-1",
@@ -217,7 +217,7 @@ cat > .vscode/mcp.json << 'EOF'
     },
     "aws-iac": {
       "command": "uvx",
-      "args": ["awslabs.iac-mcp-server@latest"],
+      "args": ["awslabs.aws-iac-mcp-server@latest"],
       "env": {
         "AWS_PROFILE": "default",
         "AWS_REGION": "us-east-1",
@@ -271,7 +271,7 @@ cat > .vscode/mcp.json << 'EOF'
     },
     "aws-serverless": {
       "command": "uvx",
-      "args": ["awslabs.serverless-mcp-server@latest"],
+      "args": ["awslabs.aws-serverless-mcp-server@latest"],
       "env": {
         "AWS_PROFILE": "default",
         "AWS_REGION": "us-east-1",
@@ -721,7 +721,7 @@ aws sts get-caller-identity
 # 각 서버를 개별적으로 테스트
 uvx awslabs.core-mcp-server@latest
 uvx awslabs.cloudwatch-mcp-server@latest
-uvx awslabs.iac-mcp-server@latest
+uvx awslabs.aws-iac-mcp-server@latest
 ```
 
 **4. AI 에디터 재시작**
@@ -762,6 +762,7 @@ aws configure
 - [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 - [AWS MCP 서버 GitHub](https://github.com/awslabs/mcp)
 - [MCP 프로토콜 문서](https://modelcontextprotocol.io/)
+
 
 ---
 
